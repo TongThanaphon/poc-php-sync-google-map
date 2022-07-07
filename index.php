@@ -67,8 +67,8 @@
         return $result;
     }
 
-    $kmlShopFile = "https://www.google.com/maps/d/u/0/kml?forcekml=1&mid=1WbkB4IVMAkwMvxlvJyo9q7iws9lYAHFo&lid=74nQe0sag_k";
-    $kmlPopFile = "https://www.google.com/maps/d/u/0/kml?forcekml=1&mid=1WbkB4IVMAkwMvxlvJyo9q7iws9lYAHFo&lid=pM3NMAmI28E";
+    $kmlShopFile = getenv('SHOP_URL');
+    $kmlPopFile = getenv('POP_URL');
 
     $shop = mapData($kmlShopFile);
     $pop = mapData($kmlPopFile);

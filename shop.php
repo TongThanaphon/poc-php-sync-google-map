@@ -17,7 +17,7 @@
     }
 
     // $kmlFile = "shop.kml";
-    $kmlFile = "https://www.google.com/maps/d/u/0/kml?forcekml=1&mid=1WbkB4IVMAkwMvxlvJyo9q7iws9lYAHFo&lid=74nQe0sag_k";
+    $kmlFile = getenv('SHOP_URL');
     $xml = simplexml_load_file($kmlFile);
     $placemarks = $xml->Document->Placemark;
 

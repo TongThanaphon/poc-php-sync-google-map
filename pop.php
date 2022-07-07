@@ -17,7 +17,7 @@
     }
 
     // $kmlFile = "pop.kml";
-    $kmlFile = "https://www.google.com/maps/d/u/0/kml?forcekml=1&mid=1WbkB4IVMAkwMvxlvJyo9q7iws9lYAHFo&lid=pM3NMAmI28E";
+    $kmlFile = getenv('POP_URL');
     $xml = simplexml_load_file($kmlFile);
     $placemarks = $xml->Document->Placemark;
 
